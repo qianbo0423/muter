@@ -5,6 +5,10 @@ class SliderModel {
 
   SliderModel(this.thumb, this.type, this.id);
 
+  factory SliderModel.fromJson(Map<String, dynamic> json) {
+    return new SliderModel(json['thumb'], 'course', 1);
+  }
+
   @override
   String toString() {
     return "thumb:" +

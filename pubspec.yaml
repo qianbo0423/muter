@@ -21,14 +21,9 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^0.1.2
-  # 幻灯片
-  carousel_slider: ^2.0.0
-  # 微信(支付，登录)
-  flutter_wechat: "^0.1.5"
-  # 支付宝支付
-  flutter_alipay: "^1.0.0"
-  # 网络库
   dio: "3.0.9"
+  flutter_swiper: 1.1.6
+  path_provider: 1.6.1
 
 dev_dependencies:
   flutter_test:

@@ -8,8 +8,10 @@ class SearchPage extends StatefulWidget {
 class _SearchPageState extends State<SearchPage> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text('搜索界面'),
+    return Scaffold(
+      appBar: new AppBar(
+        title: new Text('搜索'),
+      ),
     );
   }
 }

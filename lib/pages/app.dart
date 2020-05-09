@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:meedu/pages/index.dart';
+import '../pages/index.dart';
 import '../components/navigation_icon.dart';
 import './user.dart';
 import './vip.dart';
