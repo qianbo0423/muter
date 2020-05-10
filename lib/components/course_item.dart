@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../models/course.dart';
+import 'package:meedu/models/course.dart';
 
 class CourseItem extends StatelessWidget {
   final CourseModel course;

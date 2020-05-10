@@ -1,4 +1,4 @@
-import 'course.dart';
+import 'package:meedu/models/course.dart';
 
 class IndexBannerModel {
   final String name;

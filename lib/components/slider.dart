@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../models/slider.dart';
+import 'package:meedu/models/slider.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 
 class SliderComponent extends StatelessWidget {

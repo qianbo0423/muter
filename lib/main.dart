@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './pages/app.dart';
+import 'package:meedu/pages/app.dart';
 import 'global_config.dart';
 
 void main() => runApp(new MeEdu());

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import '../api/api.dart';
-import '../models/index_banner.dart';
-import '../models/slider.dart';
-import '../components/slider.dart';
-import '../components/index_banner.dart';
+import 'package:meedu/api/api.dart';
+import 'package:meedu/models/index_banner.dart';
+import 'package:meedu/models/slider.dart';
+import 'package:meedu/components/slider.dart';
+import 'package:meedu/components/index_banner.dart';
 
 class IndexPage extends StatefulWidget {
   @override

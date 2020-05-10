@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../models/index_banner.dart';
-import '../components/course_item.dart';
+import 'package:meedu/models/index_banner.dart';
+import 'package:meedu/components/course_item.dart';
 
 class IndexBannerComponent extends StatelessWidget {
   final List<IndexBannerModel> banners;

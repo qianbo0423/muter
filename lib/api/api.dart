@@ -1,10 +1,11 @@
 import 'dart:convert';
 
 import 'package:dio/dio.dart';
-import '../config/config.dart';
-import '../models/slider.dart';
-import '../models/course.dart';
-import '../models/index_banner.dart';
+import 'package:meedu/models/vip.dart';
+import 'package:meedu/config/config.dart';
+import 'package:meedu/models/slider.dart';
+import 'package:meedu/models/course.dart';
+import 'package:meedu/models/index_banner.dart';
 
 Future<List<SliderModel>> getBanners() async {
   List<SliderModel> slider = [];
@@ -53,4 +54,24 @@ Future<List<IndexBannerModel>> getIndexBanners() async {
   }
 
   return banners;
+}
+
+Future<List<VipModel>> getRoles() async {
+  List<VipModel> roles = [];
+  try {
+    Dio dio = new Dio(BaseOptions(baseUrl: Config.domain));
+
+    var res = await dio.get("/roles");
+    var json = jsonDecode(res.toString());
+    if (json['code'] != 0) {
+      // 错误
+    } else {
+      for (var i = 0; i < json['data'].length; i++) {
+        roles.add(VipModel.fromJson(json['data'][i]));
+      }
+    }
+  } catch (e) {
+    print(e);
+  }
+  return roles;
 }

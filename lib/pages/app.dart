@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import '../pages/index.dart';
-import '../components/navigation_icon.dart';
-import './user.dart';
-import './vip.dart';
-import '../global_config.dart';
+import 'package:meedu/pages/index.dart';
+import 'package:meedu/components/navigation_icon.dart';
+import 'package:meedu/pages/user.dart';
+import 'package:meedu/pages/vip.dart';
+import 'package:meedu/global_config.dart';
 
 class AppPage extends StatefulWidget {
   @override
